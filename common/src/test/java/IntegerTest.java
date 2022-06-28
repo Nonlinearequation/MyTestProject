@@ -14,4 +14,15 @@ public class IntegerTest {
         System.out.println("超出int最大值的string转int parseInt" + Integer.parseInt("999999999999999",10));
         System.out.println(Integer.MAX_VALUE);
     }
+
+    @Test
+    public void nullTest(){
+        Integer integer = null;
+        System.out.println(integer == 1);
+    }
+
+    @Test
+    public void intComparelong() {
+        System.out.println((1 == 1l));
+    }
 }

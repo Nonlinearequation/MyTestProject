@@ -9,11 +9,13 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/MQ/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/ES/pom.xml" />
         <option value="$PROJECT_DIR$/stream/pom.xml" />
         <option value="$PROJECT_DIR$/httpClient/pom.xml" />
+        <option value="$PROJECT_DIR$/MQ/mq-common/mq-common/pom.xml" />
+        <option value="$PROJECT_DIR$/MQ/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos/pom.xml" />
       </list>
     </option>
   </component>

@@ -2,15 +2,54 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="httpClient" />
-        <module name="MQ" />
         <module name="common" />
-        <module name="stream" />
-        <module name="ES" />
+        <module name="mq-service" />
+        <module name="nacos" />
+      </profile>
+      <profile name="Annotation profile for mq-common" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="micronaut.processing.group" value="com.example" />
+        <option name="micronaut.processing.module" value="mq-common" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-inject-java/3.4.1/micronaut-inject-java-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/org/slf4j/slf4j-api/1.7.29/slf4j-api-1.7.29.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-inject/3.4.1/micronaut-inject-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-core/3.4.1/micronaut-core-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-aop/3.4.1/micronaut-aop-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-validation/3.4.1/micronaut-validation-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-core-reactive/3.4.1/micronaut-core-reactive-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/projectreactor/reactor-core/3.4.14/reactor-core-3.4.14.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-http-validation/3.4.1/micronaut-http-validation-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-http-server/3.4.1/micronaut-http-server-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-websocket/3.4.1/micronaut-websocket-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-http/3.4.1/micronaut-http-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-http-client-core/3.4.1/micronaut-http-client-core-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-runtime/3.4.1/micronaut-runtime-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-context/3.4.1/micronaut-context-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-jackson-databind/3.4.1/micronaut-jackson-databind-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-jackson-core/3.4.1/micronaut-jackson-core-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-json-core/3.4.1/micronaut-json-core-3.4.1.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.2/jackson-datatype-jdk8-2.13.2.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar" />
+          <entry name="$PROJECT_DIR$/../../devtool/maven/testRepository/io/micronaut/micronaut-router/3.4.1/micronaut-router-3.4.1.jar" />
+        </processorPath>
+        <module name="mq-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,7 +57,15 @@
       <module name="ES" target="8" />
       <module name="httpClient" target="8" />
       <module name="MQ" target="8" />
+      <module name="mq-common" target="1.8" />
+      <module name="mq-service" target="8" />
+      <module name="nacos" target="8" />
       <module name="stream" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mq-common" options="-Amicronaut.processing.group=com.example -Amicronaut.processing.module=mq-common" />
+    </option>
   </component>
 </project>
