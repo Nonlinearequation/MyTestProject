@@ -35,7 +35,7 @@ public class OneWayProducer {
              * 参数2：消息Tag
              * 参数3： 消息内容
              */
-            Message message = new Message("topic-melon", "Tag2", ("单向消息 hello world:" + i).getBytes());
+            Message message = new Message("topic-oneway", "Tag2", ("单向消息 hello world:" + i).getBytes());
             //5. 发送单向消息
             producer.sendOneway(message);
             // 线程睡1秒

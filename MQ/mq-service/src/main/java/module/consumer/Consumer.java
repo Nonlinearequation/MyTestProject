@@ -24,7 +24,7 @@ public class Consumer {
         //2. 指定NameServer地址
         consumer.setNamesrvAddr("111.172.234.2:9876");
         //3. 订阅主题Topic和Tag
-        consumer.subscribe("topic-melon","*");
+        consumer.subscribe("topic-sync","*");
         //4. 设置回调函数，处理消息
         consumer.registerMessageListener((MessageListenerConcurrently) (list, consumeConcurrentlyContext) -> {
             System.out.printf("%s 接收消息： %s %n", Thread.currentThread().getName(), list);

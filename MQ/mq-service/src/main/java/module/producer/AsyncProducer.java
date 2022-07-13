@@ -36,7 +36,7 @@ public class AsyncProducer {
              * 参数2：消息Tag
              * 参数3： 消息内容
              */
-            Message message = new Message("topic-melon", "Tag1", ("异步消息 hello world:" + i).getBytes());
+            Message message = new Message("topic-async", "Tag1", ("异步消息 hello world:" + i).getBytes());
             //5. 发送消息
             SendResult result = producer.send(message);
             producer.send(message, new SendCallback() {

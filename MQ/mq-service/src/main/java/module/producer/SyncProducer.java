@@ -35,7 +35,7 @@ public class SyncProducer {
              * 参数2：消息Tag
              * 参数3： 消息内容
              */
-            Message message = new Message("topic-melon", "Tag3", ("同步消息 hello world:" + i).getBytes());
+            Message message = new Message("topic-sync", "Tag3", ("同步消息 hello world:" + i).getBytes());
             //5. 发送消息
             SendResult result = producer.send(message);
             //消息ID
